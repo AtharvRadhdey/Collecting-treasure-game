@@ -50,7 +50,9 @@ if(gameState===PLAY){
   
   
   //code to reset the background
- 
+  if(path.y > 400 ){
+    path.y = height/2;
+  }
   
     createCash();
     createDiamonds();
