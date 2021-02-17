@@ -6,7 +6,7 @@ var path,boy,cash,diamonds,jwellery,sword;
 var pathImg,boyImg,cashImg,diamondsImg,jwelleryImg,swordImg;
 var treasureCollection = 0;
 var cashG,diamondsG,jwelleryG,swordGroup;
-var restartImg;
+
 
 function preload(){
   pathImg = loadImage("Road.png");
@@ -16,7 +16,7 @@ function preload(){
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
   endImg =loadAnimation("gameOver.png");
-  restartImg=loadImage("Restart.png");
+
 }
 
 function setup(){
@@ -77,7 +77,7 @@ if(gameState===PLAY){
         
         gameState=END;
         
-        boy.addAnimation("SahilRunning",restartImg);
+        boy.addAnimation("SahilRunning",endImg);
         boy.x=200;
         boy.y=300;
         boy.scale=0.6;
